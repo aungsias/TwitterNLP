@@ -43,22 +43,21 @@ In this case, there’s no distinction between the two. For example, a positive 
 ![img](images/evaluation_metric.png)
 
 ## Models
-
-![img](images/models.png)
+We trained the data on multiple predictive models with many different iterations. Ultimately, our Binary classifier(Random Forest Classifier) performed the best, predicting tweet sentiment with an Accuracy score of 85%. This model only looked at tweets that were marked as having a positive or negative emotion in them. Our Ternary and Neural Ternary Classifiers included tweets that were marked as neutral or having no sentiment. The addition of this made it much more difficult for these models to accurately predict which class a tweet belonged to.![img](images/models.png)
 
 ## Feature Importances
-
-![img](images/)
+We extracted the top 20 Feature Importances from our Binary Classifier model. Since our data is text strings, the feature importances in this model are individual words. When looking at the top 20 words, there are quite a few that have a  strong connotation. Some of our most important words, such as fail, suck, fascist, and headache, elicit a clear negative connotation. It's these words that our model most heavily relies on to make predictions when given text data. Interestingly enough, there appear to be far fewer words in our top 20 that elicit positive connotation, and even those that do could be utilized in a way that would be viewed as negative. Examples of these words in our list are care and design. ![img](images/)
 
 ## Recommendations 
-
+Since the data consists of positive and negative tweets about Apple and Google, we wanted to compare the overall sentiment by brand. We calculated the percentage of positive negative tweets for both brands, and discovered that the positive and negative sentiment scores were nearly identical. However, tweets about Apple (2337 total in our binary data) constituted nearly 3 times that of Google(854 total in our binary data). 
 ![img](images/apple_google.png)
 
 1. **Apple over Google** - 
-
+Based on what our brand sentiment graph tells us, we recommend a partnership with Apple. SXSW should spend more money and resources developing an optimized app on iOS since it is a larger audience than Android. Promotions run on the app like deals on products at the Apple pop-up stores, and exclusive or primary access to events with key-note speakers from Apple could all be beneficial to the popularity of the SXSW app.
 2. **Use our predictive model to classify sentiments from future festivals** - 
-
+Additionally, we recommend using our Binary Classifier model on next year's data to calculate the change in Apple sentiment from our 2011 data. If the above recommendation is taken, we expect to see an increase in positive sentiment towards Apple, and by extension the sentiment of the SXSW app on iOS.
 3. **Compare our predictive model to the crowd-sourced approach** - 
+Finally, we recommend comparing our model's predictions to newly gathered crowd sourced predictions and see how they differ. Our model would need to be fed only the data that was collected during the new round of crowd-sourced predictions in order to properly compare the two approaches.
 
 ## Next Steps
 
