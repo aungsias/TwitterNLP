@@ -84,10 +84,10 @@ Finally, we recommend comparing our model's predictions to newly gathered crowd 
 
 ```
 ├── data
-├── notebook.ipynb
 ├── working_notebooks
 ├── images
 ├── .gitignore
 ├── README.md
+├── notebook.ipynb
 └── presentation.pdf
 ```
