@@ -3,7 +3,7 @@
 **Authors**: JF Roberts, Aung Si & Michael Romanski
 
 <p align="center">
-  <img width="800" height="300" src="images/sxsw1.jpg">
+  <img width="500" height="250" src="images/sxsw-logo-vector.png">
 </p>
 
 ## Overview
@@ -21,7 +21,7 @@ SXSW wants to develop a new app for their festival and is deciding whether to de
   <img width="250" height="250" src="images/twitter_logo.png">
 </p>
 
-Our analysis data was pulled from [Data World](https://data.world/crowdflower/brands-and-product-emotions) and included 8,700 tweets from the 2011 SXSW festival. Sentiments for each tweet were crowd-sourced where:
+Our analysis data was pulled from [Data World](https://data.world/crowdflower/brands-and-product-emotions) and included 9,000 tweets from the 2011 SXSW festival. Sentiments for each tweet were crowd-sourced where:
 
 “The crowd was asked if the tweet expressed positive, negative, or no emotion towards a brand and/or product.”
 
@@ -40,17 +40,28 @@ It’s often the case, in a business problem, that we focus on either minimizing
 
 In this case, there’s no distinction between the two. For example, a positive tweet classified as a negative holds no more value to our business problem than a negative tweet classified as a positive. Because of this, we chose accuracy as our evaluation metric. Accuracy, in this case, is how well our model predicts the actual sentiment of a tweet.
 
-![img](images/evaluation_metric.png)
+<p align="left">
+  <img width="600" height="300" src="images/evaluation_metric.png">
+</p>
 
 ## Models
-We trained the data on multiple predictive models with many different iterations. Ultimately, our Binary classifier(Random Forest Classifier) performed the best, predicting tweet sentiment with an Accuracy score of 85%. This model only looked at tweets that were marked as having a positive or negative emotion in them. Our Ternary and Neural Ternary Classifiers included tweets that were marked as neutral or having no sentiment. The addition of this made it much more difficult for these models to accurately predict which class a tweet belonged to.![img](images/models.png)
+We trained the data on multiple predictive models with many different iterations. Ultimately, our Binary classifier(Random Forest Classifier) performed the best, predicting tweet sentiment with an Accuracy score of 85%. This model only looked at tweets that were marked as having a positive or negative emotion in them. Our Ternary and Neural Ternary Classifiers included tweets that were marked as neutral or having no sentiment. The addition of this made it much more difficult for these models to accurately predict which class a tweet belonged to.
+
+<p align="left">
+  <img width="600" height="300" src="images/models.png">
+</p>
 
 ## Feature Importances
-We extracted the top 20 Feature Importances from our Binary Classifier model. Since our data is text strings, the feature importances in this model are individual words. When looking at the top 20 words, there are quite a few that have a  strong connotation. Some of our most important words, such as fail, suck, fascist, and headache, elicit a clear negative connotation. It's these words that our model most heavily relies on to make predictions when given text data. Interestingly enough, there appear to be far fewer words in our top 20 that elicit positive connotation, and even those that do could be utilized in a way that would be viewed as negative. Examples of these words in our list are care and design. ![img](images/)
+We extracted the top 20 Feature Importances from our Binary Classifier model. Since our data is text strings, the feature importances in this model are individual words. When looking at the top 20 words, there are quite a few that have a  strong connotation. Some of our most important words, such as fail, suck, fascist, and headache, elicit a clear negative connotation. It's these words that our model most heavily relies on to make predictions when given text data. Interestingly enough, there appear to be far fewer words in our top 20 that elicit positive connotation, and even those that do could be utilized in a way that would be viewed as negative. Examples of these words in our list are care and design. 
+
+![img](images/)
 
 ## Recommendations 
 Since the data consists of positive and negative tweets about Apple and Google, we wanted to compare the overall sentiment by brand. We calculated the percentage of positive negative tweets for both brands, and discovered that the positive and negative sentiment scores were nearly identical. However, tweets about Apple (2337 total in our binary data) constituted nearly 3 times that of Google(854 total in our binary data). 
-![img](images/apple_google.png)
+
+<p align="left">
+  <img width="600" height="500" src="images/apple_google.png">
+</p>
 
 1. **Apple over Google** - 
 Based on what our brand sentiment graph tells us, we recommend a partnership with Apple. SXSW should spend more money and resources developing an optimized app on iOS since it is a larger audience than Android. Promotions run on the app like deals on products at the Apple pop-up stores, and exclusive or primary access to events with key-note speakers from Apple could all be beneficial to the popularity of the SXSW app.
