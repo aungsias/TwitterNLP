@@ -54,13 +54,17 @@ We trained the data on multiple predictive models with many different iterations
 ## Feature Importances
 We extracted the top 20 Feature Importances from our Binary Classifier model. Since our data is text strings, the feature importances in this model are individual words. When looking at the top 20 words, there are quite a few that have a  strong connotation. Some of our most important words, such as fail, suck, fascist, and headache, elicit a clear negative connotation. It's these words that our model most heavily relies on to make predictions when given text data. Interestingly enough, there appear to be far fewer words in our top 20 that elicit positive connotation, and even those that do could be utilized in a way that would be viewed as negative. Examples of these words in our list are care and design. 
 
+<p align="left">
+  <img width="600" height="500" src="images/feature_importances.png">
+</p>
+
 ![img](images/)
 
 ## Recommendations 
 Since the data consists of positive and negative tweets about Apple and Google, we wanted to compare the overall sentiment by brand. We calculated the percentage of positive negative tweets for both brands, and discovered that the positive and negative sentiment scores were nearly identical. However, tweets about Apple (2337 total in our binary data) constituted nearly 3 times that of Google(854 total in our binary data). 
 
 <p align="left">
-  <img width="600" height="500" src="images/apple_google.png">
+  <img width="600" height="500" src="images/brand_sent.png">
 </p>
 
 1. **Apple over Google** - 
