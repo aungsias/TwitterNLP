@@ -17,8 +17,8 @@ SXSW wants to develop a new app for their festival and is deciding whether to de
 
 ## The Data
 
-<p align="center">
-  <img width="800" height="300" src="images/twitter_logo2.jpeg">
+<p align="left">
+  <img width="250" height="250" src="images/twitter_logo.png">
 </p>
 
 Our analysis data was pulled from [Data World](https://data.world/crowdflower/brands-and-product-emotions) and included 8,700 tweets from the 2011 SXSW festival. Sentiments for each tweet were crowd-sourced where:
@@ -28,7 +28,7 @@ Our analysis data was pulled from [Data World](https://data.world/crowdflower/br
 The data set includes information about the text of each tweet, the product the tweet is directed at, and the emotion towards that product.
 
 
-## Data Processing.
+## Data Processing
 
 An essential step in any NLP project is to process the text, whittling it down to its essential components. We achieved this by dropping irrelevant characters often found in tweets such as hashtags ‘#’, the ‘@‘ symbol, and any numbers. 
 
@@ -40,7 +40,7 @@ It’s often the case, in a business problem, that we focus on either minimizing
 
 In this case, there’s no distinction between the two. For example, a positive tweet classified as a negative holds no more value to our business problem than a negative tweet classified as a positive. Because of this, we chose accuracy as our evaluation metric. Accuracy, in this case, is how well our model predicts the actual sentiment of a tweet.
 
-![img](images/evaluation_metric)
+![img](images/evaluation_metric.png)
 
 ## Models
 
