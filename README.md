@@ -58,8 +58,6 @@ We extracted the top 20 Feature Importances from our Binary Classifier model. Si
   <img width="600" height="500" src="images/feature_importances.png">
 </p>
 
-![img](images/)
-
 ## Recommendations 
 Since the data consists of positive and negative tweets about Apple and Google, we wanted to compare the overall sentiment by brand. We calculated the percentage of positive negative tweets for both brands, and discovered that the positive and negative sentiment scores were nearly identical. However, tweets about Apple (2337 total in our binary data) constituted nearly 3 times that of Google(854 total in our binary data). 
 
